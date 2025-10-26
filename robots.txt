@@ -1,0 +1,43 @@
+# Robots.txt para Evolua+ Blindagem Mental
+# https://evolua-blindagem-mental.com
+
+# Permitir todos os crawlers
+User-agent: *
+Allow: /
+
+# Permitir crawlers específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Bloquear arquivos desnecessários
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.ts$
+Disallow: /*.tsx$
+Disallow: /vite.config.ts
+Disallow: /tailwind.config.ts
+Disallow: /tsconfig*.json
+Disallow: /eslint.config.js
+Disallow: /postcss.config.js
+
+# Sitemap
+Sitemap: https://evolua-blindagem-mental.com/sitemap.xml
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 1
